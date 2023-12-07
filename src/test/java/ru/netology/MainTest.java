@@ -31,7 +31,7 @@ class MainTest {
                     .get("/get?foo1=bar1&foo2=bar2")
                     .then()
                     .statusCode(200)
-                    .body("args.foo2", equalTo("bar1"))
+                    .body("args.foo1", equalTo("bar1"))
             ;
         }
 
